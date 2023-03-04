@@ -26,7 +26,7 @@ const Gamenew = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (targets.length < 5) {
-        const shootable = Math.random() < 0.8; // 80% chance of being shootable
+        const shootable = Math.random() < 0.8; 
         const target = {
           id: Math.floor(Math.random() * 1000),
           x: Math.floor(Math.random() * window.innerWidth),
@@ -51,7 +51,7 @@ const Gamenew = () => {
       setScore((prevScore) => prevScore + 1);
       setTargetCount((prevTargetCount) => prevTargetCount - 1);
     } else {
-      setTargetCount(5); // end the game by setting target count to 5
+      setTargetCount(5); 
       
       toast({
         title: `Game Over Score is ${score}`,
@@ -85,8 +85,8 @@ const Gamenew = () => {
             left={target.x}
             top={target.y}
             onClick={() => handleClick(target)}
-            _hover={{ bg: target.shootable ? 'pink' : 'red' }} // set background color to pink if shootable, red if not
-            _active={{ bg: target.shootable ? 'pink' : 'red' }} // set background color to pink if shootable, red if not
+            _hover={{ bg: target.shootable ? 'pink' : 'red' }} 
+            _active={{ bg: target.shootable ? 'pink' : 'red' }} 
           >
             <Image width="50px" src={target.shootable ? 'pic.png' : 'pngegg.png'} />
           </Button>

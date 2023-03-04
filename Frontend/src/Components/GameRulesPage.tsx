@@ -47,12 +47,12 @@ const GameRulesPage = () => {
           <ModalCloseButton bg={"white"} />
           <ModalBody>
             <Stack width="70%" margin={"auto"} mt="50px" border={"3px solid black"} borderRadius="5px" bg="#D9EFFA" padding={"30px"}>
-              <Text>1. On the top left corner your score will be displayd.</Text>
+              <Text>1. On the top left corner your score will be displayed.</Text>
               <Text>2. On the top right corner you can see your registered Name.</Text>
-              <Text>3. When game starts you can two types of target :-</Text>
+              <Text>3. When game starts you have two types of target :-</Text>
               <Text>i). Ballon</Text>
               <Text>ii). Man</Text>
-              <Text>4. You have to shoot only ballon using your mouse. if you shoot Man then ygame will be over</Text>
+              <Text>4. You have to shoot only ballon using your mouse. if you shoot Man then your game will be over</Text>
             </Stack>
           </ModalBody>
         </ModalContent>
